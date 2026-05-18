@@ -353,15 +353,21 @@
       font-family: 'DM Mono', monospace;
       font-size: 0.72rem;
       letter-spacing: 0.05em;
-      color: var(--muted);
+      color: var(--accent);
       text-decoration: none;
-      border: 1px solid var(--border);
-      padding: 0.3rem 0.7rem;
+      border: 1px solid var(--accent);
+      padding: 0.4rem 1rem;
       border-radius: 2px;
       transition: all 0.2s;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.3rem;
     }
 
-    .project-link:hover { color: var(--accent); border-color: var(--accent); }
+    .project-link:hover {
+      background: var(--accent);
+      color: var(--bg);
+    }
 
     .project-featured-badge {
       font-family: 'DM Mono', monospace;
